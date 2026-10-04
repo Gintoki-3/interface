@@ -911,7 +911,7 @@
     <div class='absolute w-full bottom-0 flex flex-col gradient px-6 py-3 transition-opacity desktop:select:opacity-100' class:opacity-0={immersed} class:delay-150={!pointerMoveTimeout}>
       <div class='flex items-end gap-1'>
         <div class='flex flex-col gap-2 text-left cursor-pointer'>
-          <EpisodesModal portal={wrapper} {mediaInfo} />
+          <EpisodesModal portal={wrapper} {mediaInfo} {videoFiles} {selectFile} />
         </div>
         <div class='flex flex-col gap-2 grow-0 items-end self-end text-shadow-lg ml-auto'>
           <div class='text-[rgba(217,217,217,0.6)] text-sm leading-none font-light line-clamp-1 capitalize'>{getChapterTitle(seeking ? seekPercent * safeduration / 100 : currentTime, $chapters) || ''}</div>
